@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew & Bean | Neighborhood Coffee Shop</title>
+    <meta
+      name="description"
+      content="Brew & Bean is a fictional neighborhood coffee shop serving thoughtfully roasted coffee, fresh pastries, and a warm place to linger."
+    />
+    <!-- Google Fonts: elegant serif for headings, clean sans-serif for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Skip link helps keyboard users jump past the navigation -->
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <!-- =========================
+         Navigation
+         ========================= -->
+    <header class="site-header" id="top">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="#home">
+          <span class="logo-mark" aria-hidden="true">BB</span>
+          Brew &amp; Bean
+        </a>
+
+        <!-- Hamburger button is shown on small screens -->
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#menu">Menu</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================
+           Hero
+           ========================= -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Est. 2014 · Locally roasted</p>
+          <h1>Slow mornings. Honest coffee.</h1>
+          <p class="hero-text">
+            Welcome to Brew &amp; Bean, a neighborhood café where every cup is
+            pulled with care and every table feels like a favorite corner of
+            home.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">View the menu</a>
+            <a class="btn btn-secondary" href="#contact">Visit us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           Menu
+           ========================= -->
+      <section class="section" id="menu">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Our favorites</p>
+            <h2>Coffee &amp; snacks</h2>
+            <p>
+              Six house staples we brew and bake every day. Prices are listed in
+              US dollars.
+            </p>
+          </header>
+
+          <div class="menu-grid">
+            <article class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80"
+                alt="A small cup of espresso with crema"
+              />
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>House Espresso</h3>
+                  <span class="price">$3.50</span>
+                </div>
+                <p>A rich, chocolatey double shot with a velvety crema.</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80"
+                alt="Cappuccino with foam in a ceramic cup"
+              />
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Classic Cappuccino</h3>
+                  <span class="price">$4.75</span>
+                </div>
+                <p>Equal parts espresso, steamed milk, and airy foam.</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+                alt="Iced caramel latte in a tall glass"
+              />
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Caramel Latte</h3>
+                  <span class="price">$5.25</span>
+                </div>
+                <p>Smooth espresso, steamed milk, and house caramel drizzle.</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+                alt="Glass of cold brew coffee with ice"
+              />
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Slow Cold Brew</h3>
+                  <span class="price">$4.50</span>
+                </div>
+                <p>Steeped overnight for a mellow, low-acid summer sip.</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+                alt="Golden almond croissant on a plate"
+              />
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Almond Croissant</h3>
+                  <span class="price">$3.95</span>
+                </div>
+                <p>Flaky pastry filled with almond cream and toasted nuts.</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=800&q=80"
+                alt="Blueberry muffin on a rustic table"
+              />
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Blueberry Muffin</h3>
+                  <span class="price">$3.25</span>
+                </div>
+                <p>Baked each morning with lemon zest and juicy berries.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           About
+           ========================= -->
+      <section class="section section-alt" id="about">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80"
+              alt="Barista pouring coffee in a warm café"
+            />
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">Our story</p>
+            <h2>About Brew &amp; Bean</h2>
+            <p>
+              Brew &amp; Bean began as a small corner shop with one espresso
+              machine and a simple idea: coffee should feel personal. We still
+              roast in small batches, greet regulars by name, and keep the
+              lights warm enough for lingering over a book.
+            </p>
+            <p>
+              Our beans come from partner farms in Ethiopia, Colombia, and
+              Guatemala. We bake pastries in-house, brew with filtered water,
+              and believe a good café is part kitchen, part living room.
+            </p>
+            <ul class="about-highlights">
+              <li>Small-batch roasting twice a week</li>
+              <li>House-baked pastries every morning</li>
+              <li>Community tables, quiet corners, and free Wi-Fi</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           Contact
+           ========================= -->
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <p class="eyebrow">Say hello</p>
+            <h2>Visit or write to us</h2>
+            <p>
+              We would love to hear from you. Stop by for a cup, reserve a
+              table, or send a note about catering and private events.
+            </p>
+
+            <address>
+              <p>
+                <strong>Address</strong><br />
+                48 Maple Street<br />
+                Brookhaven, NY 11719
+              </p>
+              <p>
+                <strong>Hours</strong><br />
+                Mon–Fri: 7:00 AM – 6:00 PM<br />
+                Sat–Sun: 8:00 AM – 5:00 PM
+              </p>
+              <p>
+                <strong>Phone</strong><br />
+                <a href="tel:+16315550114">(631) 555-0114</a>
+              </p>
+              <p>
+                <strong>Email</strong><br />
+                <a href="mailto:hello@brewandbean.cafe">hello@brewandbean.cafe</a>
+              </p>
+            </address>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="How can we help?"
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Brew &amp; Bean. A fictional café for demonstration.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
